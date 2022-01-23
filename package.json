@@ -1,0 +1,11 @@
+{
+  "name": "scratch",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Henrique <henrique.c.ladeira@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "react": "17.0.2",
+    "react-native": "^0.67.1"
+  }
+}
