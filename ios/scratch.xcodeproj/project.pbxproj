@@ -8,22 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		19111A42279E13B900F18FDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19111A41279E13B900F18FDC /* AppDelegate.swift */; };
-		19111A44279E13B900F18FDC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19111A43279E13B900F18FDC /* SceneDelegate.swift */; };
-		19111A46279E13B900F18FDC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19111A45279E13B900F18FDC /* ViewController.swift */; };
 		19111A49279E13B900F18FDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19111A47279E13B900F18FDC /* Main.storyboard */; };
 		19111A4B279E13BA00F18FDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19111A4A279E13BA00F18FDC /* Assets.xcassets */; };
 		19111A4E279E13BA00F18FDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19111A4C279E13BA00F18FDC /* LaunchScreen.storyboard */; };
+		CBFA385EEB84EAC1E090A034 /* libPods-scratch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A16E95C43290552CC72E9948 /* libPods-scratch.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		19111A3E279E13B900F18FDC /* scratch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = scratch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19111A41279E13B900F18FDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		19111A43279E13B900F18FDC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		19111A45279E13B900F18FDC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		19111A48279E13B900F18FDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		19111A4A279E13BA00F18FDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		19111A4D279E13BA00F18FDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		19111A4F279E13BA00F18FDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7910625B28FDF65B505CC7B6 /* Pods-scratch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-scratch.debug.xcconfig"; path = "Target Support Files/Pods-scratch/Pods-scratch.debug.xcconfig"; sourceTree = "<group>"; };
+		A16E95C43290552CC72E9948 /* libPods-scratch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-scratch.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB008E61BFF6A24A4BF0F6B4 /* Pods-scratch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-scratch.release.xcconfig"; path = "Target Support Files/Pods-scratch/Pods-scratch.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBFA385EEB84EAC1E090A034 /* libPods-scratch.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +43,8 @@
 			children = (
 				19111A40279E13B900F18FDC /* scratch */,
 				19111A3F279E13B900F18FDC /* Products */,
+				4F206B2CB778B662156673CD /* Pods */,
+				B871CAA6ECBE5DA7D607086C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,14 +60,29 @@
 			isa = PBXGroup;
 			children = (
 				19111A41279E13B900F18FDC /* AppDelegate.swift */,
-				19111A43279E13B900F18FDC /* SceneDelegate.swift */,
-				19111A45279E13B900F18FDC /* ViewController.swift */,
 				19111A47279E13B900F18FDC /* Main.storyboard */,
 				19111A4A279E13BA00F18FDC /* Assets.xcassets */,
 				19111A4C279E13BA00F18FDC /* LaunchScreen.storyboard */,
 				19111A4F279E13BA00F18FDC /* Info.plist */,
 			);
 			path = scratch;
+			sourceTree = "<group>";
+		};
+		4F206B2CB778B662156673CD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7910625B28FDF65B505CC7B6 /* Pods-scratch.debug.xcconfig */,
+				EB008E61BFF6A24A4BF0F6B4 /* Pods-scratch.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B871CAA6ECBE5DA7D607086C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A16E95C43290552CC72E9948 /* libPods-scratch.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +92,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 19111A52279E13BA00F18FDC /* Build configuration list for PBXNativeTarget "scratch" */;
 			buildPhases = (
+				8B6E0AFCD0519A8F8074288C /* [CP] Check Pods Manifest.lock */,
 				19111A3A279E13B900F18FDC /* Sources */,
 				19111A3B279E13B900F18FDC /* Frameworks */,
 				19111A3C279E13B900F18FDC /* Resources */,
+				3EBCCD6DEE68DCF0D210C183 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -133,14 +153,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3EBCCD6DEE68DCF0D210C183 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-scratch/Pods-scratch-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-scratch/Pods-scratch-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-scratch/Pods-scratch-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B6E0AFCD0519A8F8074288C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-scratch-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		19111A3A279E13B900F18FDC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19111A46279E13B900F18FDC /* ViewController.swift in Sources */,
 				19111A42279E13B900F18FDC /* AppDelegate.swift in Sources */,
-				19111A44279E13B900F18FDC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +344,7 @@
 		};
 		19111A53279E13BA00F18FDC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7910625B28FDF65B505CC7B6 /* Pods-scratch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +373,7 @@
 		};
 		19111A54279E13BA00F18FDC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB008E61BFF6A24A4BF0F6B4 /* Pods-scratch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
